@@ -4,8 +4,150 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>films, opinions and whatnot</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <style>
+        .navbar-nav .nav-link.active {
+            color: #fff;
+        }
+
+        .nav-link {
+            text-align: center;
+        }
+
+        section {
+            height: 100vh;
+            background-color: #fff;
+            padding-top: 70px;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            left: 0;
+            background-color: #fff;
+        }
+    </style>
 </head>
 <body>
     
+    <header id="cabecalho">
+        <div class="navbar navbar-expand-lg">
+            <div class="container">
+                <h1>
+                    Logo
+                </h1>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="nav nav-pills navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#inicio">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sobre">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#produtos">Produtos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contato">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- home page just like letterboxd -->
+    <section id="home">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2>
+                        Track films you’ve watched.
+                        Save those you want to see.
+                        Tell your friends what’s good. 
+                    </h2>
+                    <button class="btn btn-success">
+                        get started
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- articles session | foco do exercicio -->
+    <section id="articles">
+        <div class="container">
+            <div class="row">
+                <h1>
+                    Top Reads
+                </h1>
+                <div class="col-4-lg col-6-md col-12-sm">
+                    <article class="card mt-5">
+                        <!-- <header class="card-header">
+                            Drama
+                        </header> -->
+                        <img src="https://via.placeholder.com/180x180" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title h5">
+                                Abbias' Suffering
+                            </h4>
+                            <p class="card-text">
+                                When the heart tells you to go, say it back "go fuck yourself"
+                            </p>
+                            <a href="#" class="btn btn-dark">ler mais</a>
+                        </div>
+                        <footer class="card-footer">
+                            <small>Postado em <time>22/10/2023</time></small>
+                        </footer>
+                    </article>
+                </div>
+                <div class="col-4-lg col-6-md col-1-sm">
+                    <article class="card mt-5">
+                        <!-- <header class="card-header">
+                            Drama
+                        </header> -->
+                        <img src="https://via.placeholder.com/180x180" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title h5">
+                                Flesh Carnival
+                            </h4>
+                            <p class="card-text">
+                                Do people tipically enjoy violence?
+                            </p>
+                            <a href="#" class="btn btn-dark">ler mais</a>
+                        </div>
+                        <footer class="card-footer">
+                            <small>Postado em <time>22/10/2023</time></small>
+                        </footer>
+                    </article>
+                </div>
+                <div class="col-4-lg col-6-md col-1-sm">
+                    <article class="card mt-5">
+                        <!-- <header class="card-header">
+                            Drama
+                        </header> -->
+                        <img src="https://via.placeholder.com/180x180" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title h5">
+                                Rabi Let Me Talk
+                            </h4>
+                            <p class="card-text">
+                                Heretic Sam Moore talks about his love life and emotional indisposition 
+                            </p>
+                            <a href="#" class="btn btn-dark">ler mais</a>
+                        </div>
+                        <footer class="card-footer">
+                            <small>Postado em <time>22/10/2023</time></small>
+                        </footer>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="./lib/bootstrap.bundle.min.js"></script>
 </body>
 </html>
