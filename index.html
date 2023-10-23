@@ -7,6 +7,9 @@
     <link rel="icon" type="image/x-icon" href="./img/icons/dark-icon.png">
     <link rel="stylesheet" href="./lib/bootstrap.min.css">
     <style>
+        h2 {
+            text-transform: uppercase;
+        }
         .navbar-nav .nav-link.active {
             color: #fff;
         }
@@ -22,10 +25,11 @@
         }
 
         header {
-            position: sticky;
+            position: sticky !important;
             top: 0;
             left: 0;
             background-color: #fff;
+            z-index: 999; /* Set a higher value here */
         }
 
         .main-panel {
@@ -44,7 +48,75 @@
         .main-panel > button {
             width: 10em !important;
             text-transform: uppercase;
+            width: 10em;
         }
+
+        .main-panel img {
+            margin-left: 10px;
+        }
+
+        .produto-sub-item img {
+            cursor: pointer;
+        }
+        .produto-sub-item img:hover {
+            border: 3px solid #1aba37;
+        }
+
+        .sign-up p {
+            font-size: 20px;
+        }
+
+        .read-more {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .read-more h3 {
+            font-size: 50px;
+            text-transform: uppercase;
+            font-weight: 400;
+        }
+
+        .read-more p {
+            width: 700px;
+            overflow-wrap: break-word;
+            font-size: 13px;
+            direction: rtl; /* changes text direction */
+        }
+
+        .banner-read-more {
+            width: 100%;
+            height: 300px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            object-fit: cover;
+        }
+
+        .container-circle {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .circle {
+            width: 50px;
+            height: 50px;
+            border-radius: 100%;
+            border: 2px solid #222;
+            background-color: transparent;
+            /* padding: 10px; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 1em;
+            /* margin: 10px 10px 0 auto ; */
+        }
+
+        .circle a {
+            text-decoration: none;
+            color: #222;
+        }
+
     </style>
 </head>
 <body>
@@ -53,7 +125,7 @@
         <div class="navbar navbar-expand-lg">
             <div class="container">
                 <h1 style="color: #222; display: flex; align-items: baseline;">
-                    Logo
+                    logo
                     <img style="width: 25px; margin-left: 7px;" src="./img/icons/dark-icon.png" alt="">
                 </h1>
                 <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
@@ -78,7 +150,8 @@
             </div>
         </div>
     </header>
-    <div data-bs-spy="scroll" data-bs-target="#cabecalho">
+
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho" class="home-page">
         <!-- home page just like letterboxd -->
         <section id="home">
             <div class="container">
@@ -89,7 +162,7 @@
                             Save those you want to see.
                             Tell your friends what’s good. 
                         </h2>
-                        <button style="width: 10em;" class="btn btn-success p-3 m-2">
+                        <button class="btn btn-success p-3 m-2">
                             get started
                         </button>
                         <span class="m-2">The social network for film lovers. Also available on 
@@ -107,9 +180,9 @@
         <section id="articles">
             <div class="container">
                 <div class="row">
-                    <h1>
+                    <h2>
                         Top Reads
-                    </h1>
+                    </h2>
                     <div class="col-lg-4 col-md-6 col-sm-12">
                         <article class="card mt-5">
                             <!-- <header class="card-header">
@@ -118,10 +191,10 @@
                             <img src="https://via.placeholder.com/180x180" alt="">
                             <div class="card-body">
                                 <h4 class="card-title h5">
-                                    Abbias' Suffering
+                                    Abbias Kiarostami's Wisdom
                                 </h4>
                                 <p class="card-text">
-                                    When the heart tells you to go, say it back "go fuck yourself"
+                                    When the heart tells you to go, say it back "go fuck yourself".
                                 </p>
                                 <a href="#" class="btn btn-dark">ler mais</a>
                             </div>
@@ -141,7 +214,7 @@
                                     Flesh Carnival
                                 </h4>
                                 <p class="card-text">
-                                    Do people tipically enjoy violence?
+                                    Do people tipically enjoy violence? How gore made its way into eleveted horror.
                                 </p>
                                 <a href="#" class="btn btn-dark">ler mais</a>
                             </div>
@@ -158,10 +231,10 @@
                             <img src="https://via.placeholder.com/180x180" alt="">
                             <div class="card-body">
                                 <h4 class="card-title h5">
-                                    Rabi Let Me Talk
+                                    How to Deal with Exploding Head Syndrome
                                 </h4>
                                 <p class="card-text">
-                                    Heretic Sam Moore talks about his love life and emotional indisposition 
+                                    Apichatpong talks about his love life and emotional indisposition 
                                 </p>
                                 <a href="#" class="btn btn-dark">ler mais</a>
                             </div>
@@ -175,10 +248,94 @@
         </section>
 
         <!-- produtos mubi -->
-        <section id="produtos"></section>
+        <section id="produtos">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-sm-12 mb-3">
+                        <h2>
+                            Just Reviewed
+                        </h2>
+                    </div>
+                    <div class="col-lg-1 col-sm-3 produto-sub-item">
+                        <img src="https://via.placeholder.com/90x130" alt="">
+                    </div>
+                    <div class="col-lg-1 col-sm-3 produto-sub-item">
+                        <img src="https://via.placeholder.com/90x130" alt="">
+                    </div>
+                    <div class="col-lg-1 col-sm-3 produto-sub-item">
+                        <img src="https://via.placeholder.com/90x130" alt="">
+                    </div>
+                    <div class="col-lg-1 col-sm-3 produto-sub-item">
+                        <img src="https://via.placeholder.com/90x130" alt="">
+                    </div>
+                    <div class="col-lg-1 col-sm-3 produto-sub-item">
+                        <img src="https://via.placeholder.com/90x130" alt="">
+                    </div>
+                    <div class="col-lg-1 col-sm-3 produto-sub-item">
+                        <img src="https://via.placeholder.com/90x130" alt="">
+                    </div>
+                    <div class="col-lg-1 col-sm-3 produto-sub-item">
+                        <img src="https://via.placeholder.com/90x130" alt="">
+                    </div>
+                    <div class="col-lg-1 col-sm-3 produto-sub-item">
+                        <img src="https://via.placeholder.com/90x130" alt="">
+                    </div>
+                    <div class="col-lg-1 col-sm-3 produto-sub-item">
+                        <img src="https://via.placeholder.com/90x130" alt="">
+                    </div>
+                    <div class="col-lg-1 col-sm-3 produto-sub-item">
+                        <img src="https://via.placeholder.com/90x130" alt="">
+                    </div>
+                    <div class="col-lg-1 col-sm-3 produto-sub-item">
+                        <img class="produto-sub-item" src="https://via.placeholder.com/90x130" alt="">
+                    </div>
+                    <div class="col-lg-1 col-sm-3 produto-sub-item">
+                        <img class="produto-sub-item" src="https://via.placeholder.com/90x130" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- contato/newsletter -->
-        <section id="contato"></section>
+        <section id="contato" class="sign-up">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 read-more">
+                        <h3 class="">
+                            who is <br>
+                            georges franju?
+                        </h3>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam animi quos officiis accusantium, aliquid exercitationem in pariatur eaque fugit adipisci repellat dicta quasi architecto illum? Nisi doloribus quis voluptatibus exercitationem?
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque aut ea sed odio minus consequatur placeat aliquid, quidem hic qui ex veritatis, error dicta consequuntur. Cum, ea! Deserunt, odit obcaecati.
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad deserunt nemo distinctio dolores possimus quaerat voluptas libero?
+                        </p>
+                    </div>
+                    <img class="banner-read-more" src="./img/background.png" alt="">
+                    <div class="container-circle">
+                        <div class="circle">
+                            <a href="">
+                                read
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 mt-5" style="text-align: center;">
+                        <h3 class="display-4">
+                            Write and share reviews. Compile your own lists. Share your life in film.
+                        </h3>
+                        <p>
+                            Below are some popular reviews and lists from this week. <a href="">Sign up</a> to create your own.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
 
     <script src="./lib/bootstrap.bundle.min.js"></script>
