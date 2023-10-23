@@ -19,9 +19,17 @@
         }
 
         section {
-            height: 100vh;
+            height: 110vh;
             background-color: #fff;
             padding-top: 70px;
+        }
+
+        section .produtos {
+            margin-top: 7em;
+        }
+
+        section .cadastro {
+            margin-top: 10em !important;
         }
 
         header {
@@ -33,7 +41,7 @@
         }
 
         .main-panel {
-            margin-top: 300px;
+            margin-top: 150px;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -73,7 +81,7 @@
         }
 
         .read-more h3 {
-            font-size: 50px;
+            font-size: 35px;
             text-transform: uppercase;
             font-weight: 400;
         }
@@ -99,8 +107,8 @@
         }
 
         .circle {
-            width: 50px;
-            height: 50px;
+            width: 40px;
+            height: 40px;
             border-radius: 100%;
             border: 2px solid #444;
             background-color: transparent;
@@ -115,14 +123,16 @@
         .circle a {
             text-decoration: none;
             color: #222;
+            font-size: 12px;
         }
 
         .auteur-quote img {
-            height: 25em;
+            height: 20em;
         }
 
-        .auteur-photos {
-            height: 100px;
+        .auteur-photos img {
+            height: 25em;
+            padding: 0 50px 50px;
         }
 
     </style>
@@ -153,6 +163,9 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#contato">Contato</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#cadastro">Sign up</a>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -165,7 +178,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col main-panel">
-                        <h2 class="m-2 display-4">
+                        <h2 class="m-2 display-5">
                             Track films you’ve watched.
                             Save those you want to see.
                             Tell your friends what’s good. 
@@ -196,10 +209,10 @@
                             <!-- <header class="card-header">
                                 Drama
                             </header> -->
-                            <img src="https://via.placeholder.com/180x180" alt="">
+                            <img src="https://via.placeholder.com/100x100" alt="">
                             <div class="card-body">
                                 <h4 class="card-title h5">
-                                    Abbias Kiarostami's Wisdom
+                                    Abbias Kiarostami's Dispute
                                 </h4>
                                 <p class="card-text">
                                     When the heart tells you to go, say it back "go fuck yourself".
@@ -216,13 +229,13 @@
                             <!-- <header class="card-header">
                                 Drama
                             </header> -->
-                            <img src="https://via.placeholder.com/180x180" alt="">
+                            <img src="https://via.placeholder.com/100x100" alt="">
                             <div class="card-body">
                                 <h4 class="card-title h5">
                                     Flesh Carnival
                                 </h4>
                                 <p class="card-text">
-                                    Do people tipically enjoy violence? How gore made its way into eleveted horror.
+                                    Do people tipically enjoy violence? How gore made its way into elevated horror.
                                 </p>
                                 <a href="#" class="btn btn-dark">ler mais</a>
                             </div>
@@ -236,13 +249,13 @@
                             <!-- <header class="card-header">
                                 Drama
                             </header> -->
-                            <img src="https://via.placeholder.com/180x180" alt="">
+                            <img src="https://via.placeholder.com/100x100" alt="">
                             <div class="card-body">
                                 <h4 class="card-title h5">
                                     How to Deal with Exploding Head Syndrome
                                 </h4>
                                 <p class="card-text">
-                                    Apichatpong talks about his love life and emotional indisposition 
+                                    Lucrecia Martel talks about her love life and emotional indisposition 
                                 </p>
                                 <a href="#" class="btn btn-dark">ler mais</a>
                             </div>
@@ -259,7 +272,7 @@
         <section id="produtos">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-12 col-sm-12 mb-3">
+                    <div class="col-lg-12 col-sm-12 mb-3 produtos">
                         <h2>
                             Just Reviewed
                         </h2>
@@ -315,8 +328,7 @@
                         </h3>
                         <p>
                             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam animi quos officiis accusantium, aliquid exercitationem in pariatur eaque fugit adipisci repellat dicta quasi architecto illum? Nisi doloribus quis voluptatibus exercitationem?
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque aut ea sed odio minus consequatur placeat aliquid, quidem hic qui ex veritatis, error dicta consequuntur. Cum, ea! Deserunt, odit obcaecati.
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad deserunt nemo distinctio dolores possimus quaerat voluptas libero?
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque aut ea sed odio.
                         </p>
                     </div>
                     <img class="banner-read-more" src="./img/banner.jpg" alt="">
@@ -331,16 +343,17 @@
                         <img src="./img/quote.png" alt="">
                     </div>
                     <div class="col-lg-6 auteur-photos">
-                        <img src="./img/photograph-1.png" alt="">
-                        <img src="./img/photograph-2.png" alt="">
+                        <img src="./img/photograph.png" alt="">
                     </div>
                 </div>
             </div>
         </section>
-        <section>
+
+        <!-- section sign up -->
+        <section id="cadastro">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-12 mt-5" style="text-align: center;">
+                    <div class="col-lg-12 cadastro" style="text-align: center;">
                         <h3 class="display-4">
                             Write and share reviews. Compile your own lists. Share your life in film.
                         </h3>
