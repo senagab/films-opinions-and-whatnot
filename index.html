@@ -7,13 +7,21 @@
     <link rel="icon" type="image/x-icon" href="./img/icons/dark-icon.png">
     <link rel="stylesheet" href="./lib/bootstrap.min.css">
     <style>
-        h2 {
-            text-transform: uppercase;
-            color: #222 !important;;
+        body {
+            color: #908f8d;
         }
 
-        .navbar-nav .nav-link.active {
+        h2 {
+            text-transform: uppercase;
+            color: #fff !important;;
+        }
+
+        .navbar a {
             color: #fff;
+        }
+
+        .navbar a:hover {
+            color: #ddd;
         }
 
         .nav-link {
@@ -21,12 +29,13 @@
         }
 
         .active {
-            background-color: #222 !important;
+            background-color: #fff !important;
+            color: #222 !important;
         }
 
         section {
             height: 110vh;
-            background-color: #fff;
+            background-color: #171818;
             padding-top: 70px;
         }
 
@@ -38,7 +47,6 @@
 
         section .produtos {
             margin-top: 5em;
-            /* background-color: #444; */
         }
 
         section .cadastro {
@@ -89,17 +97,16 @@
         .card img {
             height: 20em !important;
             object-fit: cover;
+            padding: 10px;
         }
 
         .produto-sub-item img {
             cursor: pointer;
             padding: 2px;
-            border: 2px solid #e7e7e7; /* Initial border */
+            border: 2px solid #222; /* Initial border */
             transition: border-color 0.3s;
         }
 
-        .produto-sub-item {
-        }
         .produto-sub-item img:hover {
             border: 2px solid #1aba37;
         }
@@ -144,7 +151,7 @@
             width: 40px;
             height: 40px;
             border-radius: 100%;
-            border: 2px solid #444;
+            border: 2px solid #908f8d;
             background-color: transparent;
             /* padding: 10px; */
             display: flex;
@@ -156,16 +163,16 @@
 
         .circle a {
             text-decoration: none;
-            color: #222;
+            color: #908f8d;
             font-size: 12px;
         }
 
         .auteur-quote img {
-            height: 20em;
+            height: 17em;
         }
 
         .auteur-photos img {
-            height: 25em;
+            height: 22em;
             /* padding: 0 0 13px 50px; */
         }
 
@@ -176,16 +183,42 @@
         .muted-text {
             color: #555;
         }
+
+        .captcha {
+            display: flex;
+            background-color: #111;
+            border-radius: 5px;
+            height: 60px;
+            width: 60%;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 15px;
+        }
+
+        .captcha p {
+            color: #fff;
+            align-items: center;
+        }
+
+        .captcha img {
+            height: 30px;
+        }
+
+        form input {
+            background-color: #171818 !important;
+            border: 1px solid #111 !important;
+        }
+
     </style>
 </head>
 <body>
     
     <header id="cabecalho">
-        <div class="navbar navbar-expand-lg">
+        <div class="navbar navbar-expand-lg bg-dark">
             <div class="container">
-                <h1 style="color: #222; display: flex; align-items: baseline;">
+                <h1 style="color: #fff; display: flex; align-items: baseline;">
                     logo
-                    <img style="width: 25px; margin-left: 7px;" src="./img/icons/dark-icon.png" alt="">
+                    <img style="width: 25px; margin-left: 7px;" src="./img/icons/light-icon.png" alt="">
                 </h1>
                 <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
                     <span class="navbar-toggler-icon"></span>
@@ -226,15 +259,15 @@
                         <div class="col main-panel">
                             <h2 class="m-2 display-5">
                                 Track films you’ve watched.
-                                Save those you want to see.
-                                Tell your friends what’s good. 
+                                Save articles you want to read.
+                                Say what you think. 
                             </h2>
                             <a href="#cadastro">
                                 <button class="btn btn-light p-3 m-2">  
                                     GET STARTED
                                 </button>
                             </a>
-                            <span class="m-2">The social network for film lovers. Also available on 
+                            <span class="m-2">A social network for film lovers. Also available on 
                                 iOS, Apple TV
                                 and
                                 Android
@@ -254,7 +287,7 @@
                         Top Reads
                     </h2>
                     <div class="col-lg-4 col-md-6 col-sm-12">
-                        <article class="card mt-5">
+                        <article class="card mt-5 ">
                             <!-- <header class="card-header">
                                 Drama
                             </header> -->
@@ -274,7 +307,7 @@
                         </article>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-12">
-                        <article class="card mt-5">
+                        <article class="card mt-5 ">
                             <!-- <header class="card-header">
                                 Drama
                             </header> -->
@@ -294,7 +327,7 @@
                         </article>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-12">
-                        <article class="card mt-5">
+                        <article class="card mt-5 ">
                             <!-- <header class="card-header">
                                 Drama
                             </header> -->
@@ -326,40 +359,40 @@
                             Just Reviewed
                         </h2>
                     </div>
-                    <div class="col-lg-1 col-sm-3 produto-sub-item">
+                    <div class="col-lg-1 col-md-2 col-sm-3 produto-sub-item">
                         <img src="./img/film-1.jpg" alt="">
                     </div>
-                    <div class="col-lg-1 col-sm-3 produto-sub-item">
+                    <div class="col-lg-1 col-md-2 col-sm-3 produto-sub-item">
                         <img src="./img/film-2.jpg" alt="">
                     </div>
-                    <div class="col-lg-1 col-sm-3 produto-sub-item">
+                    <div class="col-lg-1 col-md-2 col-sm-3 produto-sub-item">
                         <img src="./img/film-3.jpg" alt="">
                     </div>
-                    <div class="col-lg-1 col-sm-3 produto-sub-item">
+                    <div class="col-lg-1 col-md-2 col-sm-3 produto-sub-item">
                         <img src="./img/film-4.jpg" alt="">
                     </div>
-                    <div class="col-lg-1 col-sm-3 produto-sub-item">
+                    <div class="col-lg-1 col-md-2 col-sm-3 produto-sub-item">
                         <img src="./img/film-5.jpg" alt="">
                     </div>
-                    <div class="col-lg-1 col-sm-3 produto-sub-item">
+                    <div class="col-lg-1 col-md-2 col-sm-3 produto-sub-item">
                         <img src="./img/film-6.jpg" alt="">
                     </div>
-                    <div class="col-lg-1 col-sm-3 produto-sub-item">
+                    <div class="col-lg-1 col-md-2 col-sm-3 produto-sub-item">
                         <img src="./img/film-7.jpg" alt="">
                     </div>
-                    <div class="col-lg-1 col-sm-3 produto-sub-item">
+                    <div class="col-lg-1 col-md-2 col-sm-3 produto-sub-item">
                         <img src="./img/film-8.jpg" alt="">
                     </div>
-                    <div class="col-lg-1 col-sm-3 produto-sub-item">
+                    <div class="col-lg-1 col-md-2 col-sm-3 produto-sub-item">
                         <img src="./img/film-9.jpg" alt="">
                     </div>
-                    <div class="col-lg-1 col-sm-3 produto-sub-item">
+                    <div class="col-lg-1 col-md-2 col-sm-3 produto-sub-item">
                         <img src="./img/film-10.jpg" alt="">
                     </div>
-                    <div class="col-lg-1 col-sm-3 produto-sub-item">
+                    <div class="col-lg-1 col-md-2 col-sm-3 produto-sub-item">
                         <img src="./img/film-11.jpg" alt="">
                     </div>
-                    <div class="col-lg-1 col-sm-3 produto-sub-item">
+                    <div class="col-lg-1 col-md-2 col-sm-3 produto-sub-item">
                         <img src="./img/film-12.jpg" alt="">
                     </div>
                     <div class="col-lg-12 col-sm-12 mb-3 produtos border-bottom">
@@ -367,40 +400,40 @@
                             Quintessential Reads
                         </h2>
                     </div>
-                    <div class="col-lg-1 col-sm-3 produto-sub-item">
+                    <div class="col-lg-1 col-md-2 col-sm-3 produto-sub-item">
                         <img src="./img/film-13.jpg" alt="">
                     </div>
-                    <div class="col-lg-1 col-sm-3 produto-sub-item">
+                    <div class="col-lg-1 col-md-2 col-sm-3 produto-sub-item">
                         <img src="./img/film-14.jpg" alt="">
                     </div>
-                    <div class="col-lg-1 col-sm-3 produto-sub-item">
+                    <div class="col-lg-1 col-md-2 col-sm-3 produto-sub-item">
                         <img src="./img/film-15.jpg" alt="">
                     </div>
-                    <div class="col-lg-1 col-sm-3 produto-sub-item">
+                    <div class="col-lg-1 col-md-2 col-sm-3 produto-sub-item">
                         <img src="./img/film-16.jpg" alt="">
                     </div>
-                    <div class="col-lg-1 col-sm-3 produto-sub-item">
+                    <div class="col-lg-1 col-md-2 col-sm-3 produto-sub-item">
                         <img src="./img/film-17.jpg" alt="">
                     </div>
-                    <div class="col-lg-1 col-sm-3 produto-sub-item">
+                    <div class="col-lg-1 col-md-2 col-sm-3 produto-sub-item">
                         <img src="./img/film-18.jpg" alt="">
                     </div>
-                    <div class="col-lg-1 col-sm-3 produto-sub-item">
+                    <div class="col-lg-1 col-md-2 col-sm-3 produto-sub-item">
                         <img src="./img/film-19.jpg" alt="">
                     </div>
-                    <div class="col-lg-1 col-sm-3 produto-sub-item">
+                    <div class="col-lg-1 col-md-2 col-sm-3 produto-sub-item">
                         <img src="./img/film-20.jpg" alt="">
                     </div>
-                    <div class="col-lg-1 col-sm-3 produto-sub-item">
+                    <div class="col-lg-1 col-md-2 col-sm-3 produto-sub-item">
                         <img src="./img/film-21.jpg" alt="">
                     </div>
-                    <div class="col-lg-1 col-sm-3 produto-sub-item">
+                    <div class="col-lg-1 col-md-2 col-sm-3 produto-sub-item">
                         <img src="./img/film-22.jpg" alt="">
                     </div>
-                    <div class="col-lg-1 col-sm-3 produto-sub-item">
+                    <div class="col-lg-1 col-md-2 col-sm-3 produto-sub-item">
                         <img src="./img/film-23.jpg" alt="">
                     </div>
-                    <div class="col-lg-1 col-sm-3 produto-sub-item">
+                    <div class="col-lg-1 col-md-2 col-sm-3 produto-sub-item">
                         <img src="./img/film-24.jpg" alt="">
                     </div>
                 </div>
@@ -412,13 +445,12 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 read-more">
-                        <h2 class="">
+                        <h2>
                             who is <br>
                             apichatpong?
                         </h2>
                         <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam animi quos officiis accusantium, aliquid exercitationem in pariatur eaque fugit adipisci repellat dicta quasi architecto illum? Nisi doloribus quis voluptatibus exercitationem?
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque aut ea sed odio.
+                            before trying something new nail down the basics, remember talent doesn't beat method but that doesn't mean they can't work together. why choose between one or the other? why not spiking one with another? what film school won't teach - but will try - is that great filmmakers have one common denominator and that is passion but not without good methods, great lyrics must be sang with an equally great voice, or else what's the point?
                         </p>
                     </div>
                     <img class="banner-read-more" src="./img/banner.jpg" alt="">
@@ -429,7 +461,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-lg-6 auteur-quote">
+                    <div class="col-lg-6 col-md-12 col-sm-12 auteur-quote">
                         <img src="./img/quote.png" alt="">
                     </div>
                     <div class="col-lg-6 auteur-photos" style="justify-content: flex-end; display: flex;">
@@ -448,17 +480,17 @@
                             <img src="./img/bubble.jpg" alt="">
                         </div>
                         <h3 class="display-5 mt-3" style="font-size: 40px !important;">
-                            Write and share reviews.
-                            Compile your own lists.
+                            Write and share articles.
+                            Combine your own double features.
                             Share your life in film.
                         </h3>
                         <div class="sign-up-text mt-4">
                             <p class="muted-text">
-                                A selection of popular reviews and lists are shown on our <strong><a href="#produtos" style="text-decoration: none; color: #222;">mural</a></strong> every week.
+                                A selection of popular reviews and lists are shown on our <strong><a href="#produtos" style="text-decoration: none; color: #908f8d;">mural</a></strong> every week.
                             </p>
                             <p class="normal-text">
-                                Get out of the bubble, <a href="">sign up</a> to create your own.
-                            </p>
+                                Get out of the bubble, <a href="#" data-bs-toggle="modal" data-bs-target="#modal">sign up</a> and create your own.
+                            </p>                            
                         </div>
                     </div>
                 </div>
@@ -466,6 +498,63 @@
         </section>
     </div>
 
+    
+    <div id="modal" class="modal">
+        <div class="modal-dialog">
+            <div class="modal-content bg-dark" style="width: 94% !important">
+                <div class="modal-header" style="border-bottom: 1px solid #444 !important;">
+                    <h5 class="display-5" style="font-size: 20px;">JOIN LOGOS</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <style>
+                    input .form-control {
+                        border-bottom: 1px solid #111;
+                        background-color: #444 !important;
+                    }
+                </style>
+                <div class="modal-body"><form>
+                    <label class="form-label mt-3 mb-1" for="email">Email Address</label>
+                    <input class="form-control" id="email" type="email">
+
+                    <label class="form-label mt-3 mb-1" for="username">Username</label>
+                    <input class="form-control" id="username" type="text">                
+                
+                    <label class="form-label mt-3 mb-1" for="mensagem">Password</label>
+                    <input class="form-control" id="username" type="password">   
+                
+                    <div class="form-check form-switch mt-3">
+                        <label class="form-check-label" for="aceito-termos">I'm at least 16 years old and accept the <span class="terms">Terms of Use</span></label>
+                        <input class="form-check-input" type="checkbox" id="aceito-termos">
+                    </div>
+                
+                    <div class="form-check form-switch mt-3">
+                        <label class="form-check-label" for="aceito-termos">I accept the <span class="terms">Privacy Policy</span> and consent to the processing of my personal information in accordance with it.</label>
+                        <input class="form-check-input" type="checkbox" id="aceito-termos">
+                    </div>
+
+                    <div class="captcha mt-3">
+                        <div class="form-check ">
+                            <input class="form-check-input" type="checkbox" id="aceito-termos">
+                            <label class="form-check-label" for="aceito-termos">I am human</label>
+                        </div>
+                        <img src="./img/captcha.png" alt="">
+                    </div>
+
+                    <button class="btn btn-success mt-3">SIGN UP</button>
+                </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
     <script src="./lib/bootstrap.bundle.min.js"></script>
+    <script>
+        document.getElementById('openModal').addEventListener('click', function (e) {
+            e.preventDefault(); 
+            
+            $('#modal').modal('show');
+        });
+    </script>
 </body>
 </html>
