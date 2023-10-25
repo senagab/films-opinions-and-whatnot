@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>films, opinions and whatnot</title>
+    <link rel="icon" type="image/x-icon" href="./img/icons/dark-icon.png">
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    
+    <header id="cabecalho">
+        <div class="navbar navbar-expand-lg bg-dark">
+            <div class="container">
+                <h1 style="color: #fff; display: flex; align-items: baseline;">
+                    logo
+                    <img style="width: 25px; margin-left: 7px;" src="./img/icons/light-icon.png" alt="">
+                </h1>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="nav nav-pills navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#login">Sign in</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#articles">Articles</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#produtos">Mural</a>
+                        </li>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contato">Auteur Showcase</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#cadastro">Join us</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <style>
+        .login-container {
+            height: 72px;
+            width: 600px;
+            background: #111;
+            padding: 8px 25px;
+            display: flex;
+            align-items: center;
+            font-size: 12px;
+            border-radius: 10px;
+        }
+
+        .field {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .field input {
+            width: 10em;
+        }
+
+        .btn {
+            width: 100% !important;
+            height: 2em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .button-signin, .remember-me {
+            max-width: 150px;
+        }
+
+        div.button-signin {
+            padding: 8px 0 !important;
+        }
+
+    </style>
+    <section>
+        <div class="container">
+            <div class="login-container">
+                <div class="col">
+                    <div class="field">
+                        <label for="username ml-2">username</label>
+                        <input class="form-input" type="email">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="field">
+                        <label for="password">password</label>
+                        <input class="form-input" type="email">
+                    </div>
+                </div>
+                <div class="col remember-me">
+                    <input class="form-check-input" type="checkbox">
+                    <label class="form-check-label" for="remember-me">remember me</label>
+                </div>
+                <div class="col button-signin">
+                    <button class="btn btn-success">
+                        sign in
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        
+        <fieldset class="fieldset">
+            <div class="fields">
+                <div class="col">
+                    <label for="username">Username</label>
+                    <input type="email" name="username" id="username" class="field signin-field" tabindex="1" data-focus-control="signingIn" autocomplete='email' inputmode='email' value="" />
+                </div>
+                <div class="col">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" class="field signin-field" tabindex="2" autocomplete='current-password' value="" />
+                </div>
+                <div class="signin-actions">
+                    <label for="remember" class="option-label -checkbox -small">
+                        <input type="checkbox" name="remember" id="remember" class="checkbox" tabindex="3" value="true" /><i class="substitute"></i>
+                        <span class="focus">Remember<span class="mob-hide"> me</span></span>
+                    </label>
+                    <p class="reset" tabindex="5"><a class="reset-password-link" href="/user/request-password-reset" target="_top">Forgotten<span class="elongated"> username or password</span>?</a></p>
+                </div>
+                <div class="col buttons">
+                    <div class="button-container"><input type="submit" value="Sign in" class="button -action button-green" tabindex="4" /><i></i></div>
+                    <div class="close js-close-signin">&times;</div>
+                </div>
+            </div>
+        </fieldset>
+        <div id="signin-message" class="errormessage"></div>
+    </section>
+
+
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+    <script>
+        document.getElementById('openModal').addEventListener('click', function (e) {
+            e.preventDefault(); 
+            
+            $('#modal').modal('show');
+        });
+    </script>
+</body>
+</html>
