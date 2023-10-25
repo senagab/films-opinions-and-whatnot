@@ -63,7 +63,7 @@ section .cadastro {
 
 #contato .auteur-quote {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
 }
 
 header {
@@ -175,7 +175,7 @@ header {
 }
 
 .auteur-quote img {
-    height: 17em;
+    height: 20em;
 }
 
 .auteur-photos img {
@@ -266,9 +266,18 @@ form input {
         justify-content: center;
     }
 
+    #produtos .row {
+        margin: auto !important;
+    }
+
     .auteur-quote img {
         height: 13em;
-        max-width: 20em;
+        width: 100%;
+    }
+
+    .auteur-photos img {
+        height: 15em;
+        width: 100%;
     }
 
     .banner-read-more{
