@@ -6,220 +6,7 @@
     <title>films, opinions and whatnot</title>
     <link rel="icon" type="image/x-icon" href="./img/icons/dark-icon.png">
     <link rel="stylesheet" href="./lib/bootstrap.min.css">
-    <style>
-        body {
-            color: #908f8d;
-        }
-
-        h2 {
-            text-transform: uppercase;
-            color: #fff !important;;
-        }
-
-        .navbar a {
-            color: #fff;
-        }
-
-        .navbar a:hover {
-            color: #ddd;
-        }
-
-        .nav-link {
-            text-align: center;
-        }
-
-        .active {
-            background-color: #fff !important;
-            color: #222 !important;
-        }
-
-        section {
-            height: 110vh;
-            background-color: #171818;
-            padding-top: 70px;
-        }
-
-        .background-home {
-            background-image: url("img/background-2.png");
-            height: 900px;
-            width:100%;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-
-        section .produtos {
-            margin-top: 5em;
-        }
-
-        section .cadastro {
-            margin-top: 10em !important;
-        }
-
-        /* #produtos .col-lg-1 {
-            padding: 0 !important;
-        } */
-
-        .produtos h2 {
-            margin-right: .5em;
-        }
-
-        #produtos img {
-            height: 130px;
-            width: 90px;
-            object-fit: cover;
-        }
-
-        header {
-            position: sticky !important;
-            top: 0;
-            left: 0;
-            background-color: #fff;
-            z-index: 999; /* Set a higher value here */
-        }
-
-        .main-panel {
-            margin-top: 150px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .main-panel h2 {
-            overflow-wrap: break-word;
-            width: 800px;
-            text-align: center;
-        }
-
-        .main-panel > button {
-            width: 10em !important;
-            text-transform: uppercase;
-            width: 10em;
-        }
-
-        .main-panel img {
-            margin-left: 10px;
-        }
-
-        .card {
-            background-color: #eee;
-        }
-
-        .card img {
-            height: 20em !important;
-            object-fit: cover;
-            padding: 10px;
-        }
-
-        .produto-sub-item img {
-            cursor: pointer;
-            padding: 2px;
-            border: 2px solid #222; /* Initial border */
-            transition: border-color 0.3s;
-        }
-
-        .produto-sub-item img:hover {
-            border: 2px solid #1aba37;
-        }
-
-        .sign-up p {
-            font-size: 20px;
-        }
-
-        .read-more {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .read-more h3 {
-            font-size: 35px;
-            text-transform: uppercase;
-            font-weight: 400;
-        }
-
-        .read-more p {
-            width: 700px;
-            overflow-wrap: break-word;
-            font-size: 13px;
-            direction: rtl; /* changes text direction */
-        }
-
-        .banner-read-more {
-            width: 100%;
-            height: 300px;
-            background-repeat: no-repeat;
-            background-size: cover;
-            object-fit: cover;
-        }
-
-        .container-circle {
-            display: flex;
-            justify-content: flex-end;
-        }
-
-        .circle {
-            width: 40px;
-            height: 40px;
-            border-radius: 100%;
-            border: 2px solid #bbb;
-            background-color: transparent;
-            /* padding: 10px; */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-top: 1em;
-            /* margin: 10px 10px 0 auto ; */
-        }
-
-        .circle a {
-            text-decoration: none;
-            color: #bbb;
-            font-size: 12px;
-        }
-
-        .auteur-quote img {
-            height: 17em;
-        }
-
-        .auteur-photos img {
-            height: 22em;
-            /* padding: 0 0 13px 50px; */
-        }
-
-        .sign-up-img img {
-            border-radius: 10px;
-        }
-
-        .muted-text {
-            color: #555;
-        }
-
-        .captcha {
-            display: flex;
-            background-color: #111;
-            border-radius: 5px;
-            height: 60px;
-            width: 60%;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 15px;
-        }
-
-        .captcha p {
-            color: #fff;
-            align-items: center;
-        }
-
-        .captcha img {
-            height: 30px;
-        }
-
-        form input {
-            background-color: #171818 !important;
-            border: 1px solid #111 !important;
-        }
-
-    </style>
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
     
@@ -266,7 +53,7 @@
             <div class="background-home">
                 <div class="container">
                     <div class="row">
-                        <div class="col main-panel">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 main-panel">
                             <h2 class="m-2 display-5">
                                 Track films you’ve watched.
                                 Save articles you want to read.
@@ -298,9 +85,6 @@
                     </h2>
                     <div class="col-lg-4 col-md-6 col-sm-12">
                         <article class="card mt-5 ">
-                            <!-- <header class="card-header">
-                                Drama
-                            </header> -->
                             <img src="./img/abbias.jpg" alt="">
                             <div class="card-body">
                                 <h4 class="card-title h5">
@@ -318,9 +102,6 @@
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-12">
                         <article class="card mt-5 ">
-                            <!-- <header class="card-header">
-                                Drama
-                            </header> -->
                             <img src="./img/gore.jpg" alt="">
                             <div class="card-body">
                                 <h4 class="card-title h5">
@@ -338,9 +119,6 @@
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-12">
                         <article class="card mt-5 ">
-                            <!-- <header class="card-header">
-                                Drama
-                            </header> -->
                             <img src="./img/lucrecia.jpg" alt="">
                             <div class="card-body">
                                 <h4 class="card-title h5">
@@ -372,40 +150,40 @@
                             POPULAR REVIEWS THIS WEEK
                         </p>
                     </div>
-                    <div class="col-lg-1 col-md-2 col-sm-3 produto-sub-item">
+                    <div class="col-lg-1 col-md-2 col-sm-3 col-xs-3 produto-sub-item">
                         <img src="./img/film-1.jpg" alt="">
                     </div>
-                    <div class="col-lg-1 col-md-2 col-sm-3 produto-sub-item">
+                    <div class="col-lg-1 col-md-2 col-sm-3 col-xs-3 produto-sub-item">
                         <img src="./img/film-2.jpg" alt="">
                     </div>
-                    <div class="col-lg-1 col-md-2 col-sm-3 produto-sub-item">
+                    <div class="col-lg-1 col-md-2 col-sm-3 col-xs-3 produto-sub-item">
                         <img src="./img/film-3.jpg" alt="">
                     </div>
-                    <div class="col-lg-1 col-md-2 col-sm-3 produto-sub-item">
+                    <div class="col-lg-1 col-md-2 col-sm-3 col-xs-3 produto-sub-item">
                         <img src="./img/film-4.jpg" alt="">
                     </div>
-                    <div class="col-lg-1 col-md-2 col-sm-3 produto-sub-item">
+                    <div class="col-lg-1 col-md-2 col-sm-3 col-xs-3 produto-sub-item">
                         <img src="./img/film-5.jpg" alt="">
                     </div>
-                    <div class="col-lg-1 col-md-2 col-sm-3 produto-sub-item">
+                    <div class="col-lg-1 col-md-2 col-sm-3 col-xs-3 produto-sub-item">
                         <img src="./img/film-6.jpg" alt="">
                     </div>
-                    <div class="col-lg-1 col-md-2 col-sm-3 produto-sub-item">
+                    <div class="col-lg-1 col-md-2 col-sm-3 col-xs-3 produto-sub-item">
                         <img src="./img/film-7.jpg" alt="">
                     </div>
-                    <div class="col-lg-1 col-md-2 col-sm-3 produto-sub-item">
+                    <div class="col-lg-1 col-md-2 col-sm-3 col-xs-3 produto-sub-item">
                         <img src="./img/film-8.jpg" alt="">
                     </div>
-                    <div class="col-lg-1 col-md-2 col-sm-3 produto-sub-item">
+                    <div class="col-lg-1 col-md-2 col-sm-3 col-xs-3 produto-sub-item">
                         <img src="./img/film-9.jpg" alt="">
                     </div>
-                    <div class="col-lg-1 col-md-2 col-sm-3 produto-sub-item">
+                    <div class="col-lg-1 col-md-2 col-sm-3 col-xs-3 produto-sub-item">
                         <img src="./img/film-10.jpg" alt="">
                     </div>
-                    <div class="col-lg-1 col-md-2 col-sm-3 produto-sub-item">
+                    <div class="col-lg-1 col-md-2 col-sm-3 col-xs-3 produto-sub-item">
                         <img src="./img/film-11.jpg" alt="">
                     </div>
-                    <div class="col-lg-1 col-md-2 col-sm-3 produto-sub-item">
+                    <div class="col-lg-1 col-md-2 col-sm-3 col-xs-3 produto-sub-item">
                         <img src="./img/film-12.jpg" alt="">
                     </div>
                     <div class="col-lg-12 col-sm-12 mb-3 produtos border-bottom d-flex align-items-baseline">
@@ -413,43 +191,43 @@
                             Quintessential Reads
                         </h2>
                         <p>
-                            ALL TIME READS YOU MUST SEE
+                            ALL TIME READS
                         </p>
                     </div>
-                    <div class="col-lg-1 col-md-2 col-sm-3 produto-sub-item">
+                    <div class="col-lg-1 col-md-2 col-sm-3 col-xs-3 produto-sub-item">
                         <img src="./img/film-13.jpg" alt="">
                     </div>
-                    <div class="col-lg-1 col-md-2 col-sm-3 produto-sub-item">
+                    <div class="col-lg-1 col-md-2 col-sm-3 col-xs-3 produto-sub-item">
                         <img src="./img/film-14.jpg" alt="">
                     </div>
-                    <div class="col-lg-1 col-md-2 col-sm-3 produto-sub-item">
+                    <div class="col-lg-1 col-md-2 col-sm-3 col-xs-3 produto-sub-item">
                         <img src="./img/film-15.jpg" alt="">
                     </div>
-                    <div class="col-lg-1 col-md-2 col-sm-3 produto-sub-item">
+                    <div class="col-lg-1 col-md-2 col-sm-3 col-xs-3 produto-sub-item">
                         <img src="./img/film-16.jpg" alt="">
                     </div>
-                    <div class="col-lg-1 col-md-2 col-sm-3 produto-sub-item">
+                    <div class="col-lg-1 col-md-2 col-sm-3 col-xs-3 produto-sub-item">
                         <img src="./img/film-17.jpg" alt="">
                     </div>
-                    <div class="col-lg-1 col-md-2 col-sm-3 produto-sub-item">
+                    <div class="col-lg-1 col-md-2 col-sm-3 col-xs-3 produto-sub-item">
                         <img src="./img/film-18.jpg" alt="">
                     </div>
-                    <div class="col-lg-1 col-md-2 col-sm-3 produto-sub-item">
+                    <div class="col-lg-1 col-md-2 col-sm-3 col-xs-3 produto-sub-item">
                         <img src="./img/film-19.jpg" alt="">
                     </div>
-                    <div class="col-lg-1 col-md-2 col-sm-3 produto-sub-item">
+                    <div class="col-lg-1 col-md-2 col-sm-3 col-xs-3 produto-sub-item">
                         <img src="./img/film-20.jpg" alt="">
                     </div>
-                    <div class="col-lg-1 col-md-2 col-sm-3 produto-sub-item">
+                    <div class="col-lg-1 col-md-2 col-sm-3 col-xs-3 produto-sub-item">
                         <img src="./img/film-21.jpg" alt="">
                     </div>
-                    <div class="col-lg-1 col-md-2 col-sm-3 produto-sub-item">
+                    <div class="col-lg-1 col-md-2 col-sm-3 col-xs-3 produto-sub-item">
                         <img src="./img/film-22.jpg" alt="">
                     </div>
-                    <div class="col-lg-1 col-md-2 col-sm-3 produto-sub-item">
+                    <div class="col-lg-1 col-md-2 col-sm-3 col-xs-3 produto-sub-item">
                         <img src="./img/film-23.jpg" alt="">
                     </div>
-                    <div class="col-lg-1 col-md-2 col-sm-3 produto-sub-item">
+                    <div class="col-lg-1 col-md-2 col-sm-3 col-xs-3 produto-sub-item">
                         <img src="./img/film-24.jpg" alt="">
                     </div>
                 </div>
@@ -478,7 +256,7 @@
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-12 col-sm-12 auteur-quote">
-                        <img src="./img/quote.png" alt="">
+                        <img src="./img/quote-small.png" alt="">
                     </div>
                     <div class="col-lg-6 auteur-photos" style="justify-content: flex-end; display: flex;">
                         <img src="./img/photograph.png" alt="">
@@ -517,7 +295,7 @@
     
     <div id="modal" class="modal">
         <div class="modal-dialog">
-            <div class="modal-content bg-dark" style="width: 94% !important">
+            <div class="modal-content bg-dark">
                 <div class="modal-header" style="border-bottom: 1px solid #444 !important;">
                     <h5 class="display-5" style="font-size: 20px;">JOIN LOGOS</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
@@ -539,12 +317,12 @@
                     <input class="form-control" id="username" type="password">   
                 
                     <div class="form-check form-switch mt-3">
-                        <label class="form-check-label" for="aceito-termos">I'm at least 16 years old and accept the <span class="terms">Terms of Use</span></label>
+                        <label class="form-check-label" for="aceito-termos">I'm at least 16 years old and accept the <span class="terms"><a href="#">Terms of Use</a></span></label>
                         <input class="form-check-input" type="checkbox" id="aceito-termos">
                     </div>
                 
                     <div class="form-check form-switch mt-3">
-                        <label class="form-check-label" for="aceito-termos">I accept the <span class="terms">Privacy Policy</span> and consent to the processing of my personal information in accordance with it.</label>
+                        <label class="form-check-label" for="aceito-termos">I accept the <span class="terms"><a href="#">Privacy Policy</a></span> and consent to the processing of my personal information in accordance with it.</label>
                         <input class="form-check-input" type="checkbox" id="aceito-termos">
                     </div>
 
