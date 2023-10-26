@@ -304,13 +304,15 @@ form input {
 }
 
 /* sign in */
-
+#sign-in-modal {
+    display: none;
+}
 
 .login-container {
-    height: 72px;
-    width: 600px;
+    /* height: 72px; */
+    width: 100%;
     background: #111;
-    padding: 8px 25px;
+    /* padding: 8px 25px; */
     display: flex;
     align-items: center;
     font-size: 12px;
