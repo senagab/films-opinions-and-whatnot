@@ -36,7 +36,7 @@ section {
 }
 
 .background-home {
-    background-image: url("img/background-2.png");
+    background-image: url("img/background-1.png"), url("img/background-2.png");
     height: 900px;
     width:100%;
     background-repeat: no-repeat;
@@ -141,13 +141,12 @@ header {
     direction: rtl; /* changes text direction */
 }
 
-.banner-read-more {
-    width: 100%;
-    height: 300px;
-    background-repeat: no-repeat;
-    background-size: cover;
+.carousel-inner {
     object-fit: cover;
+    height: 300px;
 }
+
+.carousel
 
 .container-circle {
     display: flex;
@@ -184,7 +183,8 @@ header {
 }
 
 .sign-up-img img {
-    border-radius: 10px;
+    height: 250px;
+    object-fit: cover;
 }
 
 .muted-text {
@@ -234,11 +234,11 @@ form input {
     }
 
     #articles {
-        height: 260vh;
+        height: 640vh;
     }
 
     #produtos {
-        height: 170vh;
+        height:250vh;
     }
 
     .produto-sub-item {
@@ -270,6 +270,15 @@ form input {
         margin: auto !important;
     }
 
+    .banner-read-more {
+        height: 11em !important;
+    }
+
+    .carousel-inner {
+        object-fit: cover;
+        height: 300px;
+    }
+
     .auteur-quote img {
         height: 13em;
         width: 100%;
@@ -277,11 +286,6 @@ form input {
 
     .auteur-photos img {
         height: 15em;
-        width: 100%;
-    }
-
-    .banner-read-more{
-        height: 200px;
         width: 100%;
     }
 
@@ -309,10 +313,10 @@ form input {
 }
 
 .login-container {
-    /* height: 72px; */
+    height: 72px;
     width: 100%;
     background: #111;
-    /* padding: 8px 25px; */
+    padding: 8px 25px;
     display: flex;
     align-items: center;
     font-size: 12px;
