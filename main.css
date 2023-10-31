@@ -36,7 +36,7 @@ section {
 }
 
 .background-home {
-    background-image: url("img/background-1.png"), url("img/background-2.png");
+    background-image: url("img/wallp-1.png"), url("img/background-2.png");
     height: 900px;
     width:100%;
     background-repeat: no-repeat;
