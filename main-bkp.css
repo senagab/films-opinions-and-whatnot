@@ -47,7 +47,7 @@ section .produtos {
     margin-top: 5em;
 }
 
-section .cadastro {
+section .sign-up {
     margin-top: 10em !important;
 }
 
@@ -289,7 +289,7 @@ form input {
         width: 100%;
     }
 
-    #cadastro {
+    #sign-up {
         height: 180vh;
     }
 
