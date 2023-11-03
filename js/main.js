@@ -1,21 +1,31 @@
-const menu = document.getElementById("menu");
-const signInButton = document.getElementById("sign-in-btn");
-const signInModal = document.getElementById("sign-in-modal");
+// Get references to your modal and modal elements
+const modal = document.getElementById('modal-review');
+const modalTitulo = modal.querySelector('h3');
+const modalParagrafo = modal.querySelectorAll('p');
+const modalImg = modal.querySelector('img');
 
-signInButton.addEventListener("click", (event) => {
-    event.preventDefault();
+// Assuming you have 24 image IDs like "img-1", "img-2", ...
+for (let i = 1; i <= 24; i++) {
+    const image = document.getElementById(`img-${i}`);
 
-    // Smoothly fade out the menu by changing its opacity
-    // menu.style.transition = "opacity 0.5s";
-    menu.style.opacity = 0;
+    image.addEventListener('click', () => {
+    modalTitulo.textContent = 'Title for Image ' + i;
+    
+    const paragraphsContent = [
+        'First paragraph for Image ' + i,
+        'Second paragraph for Image ' + i,
+        'Third paragraph for Image ' + i,
+    ];
 
-    // Prevent clicks on the hidden menu
-    menu.style.pointerEvents = "none";
+    for (let j = 0; j < paragraphsContent.length; j++) {
+            aphs[j].textContent = paragraphsContent[j];
+        }
 
-    // Show the sign-in modal
-    signInModal.style.display = "block";
+        // Update the image source
+        modalImg.src = `./img/film-${i}.jpg`;
 
-    // Optionally, you can fade in the sign-in modal as well
-    // signInModal.style.transition = "opacity 0.5s";
-    signInModal.style.opacity = 1;
-});
+        // Show the modal
+        const modalInstance = new bootstrap.Modal(modal);
+        modalInstance.show();
+    });
+}
