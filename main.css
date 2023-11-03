@@ -135,12 +135,10 @@ section {
     border-radius: 100%;
     border: 2px solid #bbb;
     background-color: transparent;
-    /* padding: 10px; */
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 1em;
-    /* margin: 10px 10px 0 auto ; */
 }
 
 .circle a {
@@ -155,6 +153,5 @@ section {
 
 .auteur-photos img {
     height: 22em;
-    /* padding: 0 0 13px 50px; */
 }
 
