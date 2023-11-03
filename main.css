@@ -3,6 +3,11 @@ body {
     color: #908f8d;
 }
 
+h2 {
+    text-transform: uppercase;
+    color: #fff !important;;
+}
+
 header {
     position: sticky !important;
     top: 0;
@@ -76,6 +81,10 @@ section {
 
 /* mural */
 
+.mural h2 {
+    margin-right: .5em;
+}
+
 .mural-sub-item img {
     cursor: pointer;
     padding: 2px;
@@ -91,7 +100,7 @@ section {
 } */
 
 .mural-sub-item img:hover {
-    border: 2px solid #1aba37;
+    border: 2px solid #fff;
 }
 
 /* showcase */
@@ -108,8 +117,6 @@ section {
 
 .read-more h2 {
     font-size: 35px;
-    text-transform: uppercase;
-    font-weight: 500;
 }
 
 .read-more p {
