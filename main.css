@@ -139,6 +139,7 @@ section {
     justify-content: center;
     align-items: center;
     margin-top: 1em;
+    /* margin: 10px 10px 0 auto ; */
 }
 
 .circle a {
@@ -153,5 +154,47 @@ section {
 
 .auteur-photos img {
     height: 22em;
+}
+
+/* sign-up modal */
+
+/* .sign-up-img img {
+    height: 250px;
+    object-fit: cover;
+} */
+
+/* .muted-text {
+    color: #555;
+} */
+
+.captcha {
+    display: flex;
+    background-color: #111;
+    border-radius: 5px;
+    height: 60px;
+    width: 60%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+}
+
+.captcha img {
+    height: 30px;
+}
+
+.captcha p {
+    color: #fff;
+    align-items: center;
+}
+
+.terms a {
+    color: white;
+    text-decoration: none;
+}
+
+form input {
+    background-color: #171818 !important;
+    border: 1px solid #111 !important;
+    color: #fff !important;
 }
 
