@@ -27,27 +27,33 @@
         .main-container {
             background-color: #1a1d20;
             padding: 20px;
+            border-radius: 0.5rem;
+        }
+
+        .icons-container {
+            margin-right: 5px;
+            cursor: pointer;
         }
 
         .icons-container img {
             height: 12px;
             margin-right: 8px;
-            opacity: 0.7;
-        }
-
-        .icons-container img:hover {
-            opacity: 1;
+            opacity: 0.6;
         }
 
         .icons-container span {
             font-size: 14px;
             font-weight: 400;
-            opacity: 0.7;
+            opacity: 0.6;
         }
 
-        .icons-container span:hover {
+        .icons-container:hover img, .icons-container:hover span {
             opacity: 1;
         }
+
+        /* .icons-container span:hover {
+            opacity: 1;
+        } */
 
         .author {
             font-size: 12px;
@@ -70,10 +76,26 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
                 <div class="modal-body">
-                    
+                                        
                     <div class="review-container d-flex">
                         <div class="film-container">
                             <img src="./img/film-1.jpg" alt="">
+                            <div class="footer-container mt-2">
+                                <span class="author">
+                                    Reviewed by <span id="author">Alan</span>
+                                </span>
+                                <div class="stats-container d-flex">
+                                    <div class="icons-container">
+                                        <img src="./img/icons/light-icon.png" alt=""><span>33</span>
+                                    </div>
+                                    <div class="icons-container">
+                                        <img src="./img/icons/light-icon.png" alt=""><span>33</span>
+                                    </div>
+                                    <div class="icons-container">
+                                        <img src="./img/icons/light-icon.png" alt=""><span>33</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="text-container">
                             <div class="main-container">
@@ -82,23 +104,14 @@
                                 </h3>
                                 <p>
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque labore officia voluptatem ullam corrupti repellat quidem dolore harum consectetur deleniti, placeat error ipsam eos reiciendis, consequuntur id molestiae aut ab.
-                                </p>
-                                <p>
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque labore officia voluptatem ullam corrupti repellat quidem dolore harum consectetur deleniti, placeat error ipsam eos reiciendis, consequuntur id molestiae aut ab.
                                 </p>
-                                <p>
+                                <!-- <p>
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque labore officia voluptatem ullam corrupti repellat quidem dolore harum consectetur deleniti, placeat error ipsam eos reiciendis, consequuntur id molestiae aut ab.
-                                </p>
-                            </div>
-                            <div class="footer-container mt-2">
-                                <span class="author">
-                                    Review by <span id="author">Alan</span>
-                                </span>
-                                <div class="icons-container">
-                                    <img src="./img/icons/light-icon.png" alt=""><span>33</span>
-                                    <img src="./img/icons/light-icon.png" alt=""><span>33</span>
-                                    <img src="./img/icons/light-icon.png" alt=""><span>33</span>
-                                </div>
+                                </p> -->
+                                <!-- <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque labore officia voluptatem ullam corrupti repellat quidem dolore harum consectetur deleniti, placeat error ipsam eos reiciendis, consequuntur id molestiae aut ab.
+                                </p> -->
                             </div>
                         </div>
                     </div>
