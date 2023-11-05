@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // array de titulos dos filmes
     const titles = [
         'Ichiko (2023)',
-        'La Règle de trois (2012)',
+        'La Règle de Trois (2012)',
         'Dancer in the Dark (2000)',
         'Cries and Whispers (1972)',
         'Lady Vengeance (2005)',

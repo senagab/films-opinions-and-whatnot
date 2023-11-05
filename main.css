@@ -208,18 +208,64 @@ form input {
 
 @media screen and (max-width: 767px) { /* conversão layout fixo para responsivo */
 
+    .navbar-toggler-icon {
+        background-color: white; /* Change the background color to white */
+    }
+    
     #home {
         height: 100vh;
     }
 
     #home h2, p, span {
-        max-width: 400px;
+        max-width: 300px;
     }
 
-    #mural .row>*{
-        /* width: auto !important; */
+    .card {
+        text-align: center;
     }
 
+    .mural-sub-item {
+        width: 30%;
+    }
+
+    .read-more {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        text-align: center;
+        width: 100%;
+        /* overflow: scroll; */
+    }
+
+    .read-more p {
+        width: 270px;
+        overflow-wrap: break-word;
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .auteur-quote img {
+        display: none;
+    }
+
+    .auteur-photos img {
+        display: none;
+    }
+
+    .carousel-inner {    
+        max-width: 100%;
+        height: auto;
+    }
+
+    .carousel-inner img {
+        /* height: 500px; */
+        width: 100%;
+        object-fit: cover;
+        max-width: 100%; /* Garante que as imagens não ultrapassem o carrossel */
+        display: inline-block;
+    }
+    
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
