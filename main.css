@@ -163,17 +163,6 @@ section {
     height: 22em;
 }
 
-/* sign-up modal */
-
-/* .sign-up-img img {
-    height: 250px;
-    object-fit: cover;
-} */
-
-/* .muted-text {
-    color: #555;
-} */
-
 .captcha {
     display: flex;
     background-color: #111;
