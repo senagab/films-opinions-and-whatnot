@@ -217,7 +217,7 @@ form input {
     }
 
     #mural .row>*{
-        width: auto !important;
+        /* width: auto !important; */
     }
 
 }
