@@ -163,6 +163,17 @@ section {
     height: 22em;
 }
 
+/* sign-up modal */
+
+/* .sign-up-img img {
+    height: 250px;
+    object-fit: cover;
+} */
+
+/* .muted-text {
+    color: #555;
+} */
+
 .captcha {
     display: flex;
     background-color: #111;
@@ -192,5 +203,34 @@ form input {
     background-color: #171818 !important;
     border: 1px solid #111 !important;
     color: #fff !important;
+}
+
+
+@media screen and (max-width: 767px) { /* conversão layout fixo para responsivo */
+
+    #home {
+        height: 100vh;
+    }
+
+    #home h2, p, span {
+        max-width: 400px;
+    }
+
+    #mural .row>*{
+        width: auto !important;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    
+
+
+}
+
+@media screen and (min-width: 1024px) {
+
+    
+
 }
 
