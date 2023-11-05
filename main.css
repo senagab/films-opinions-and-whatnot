@@ -213,10 +213,11 @@ form input {
     }
     
     #home {
-        height: 100vh;
+        /* height: 100vh; */
     }
 
-    #home h2, p, span {
+    .main-panel h2,
+    .main-panel span {
         max-width: 300px;
     }
 
@@ -225,7 +226,7 @@ form input {
     }
 
     .mural-sub-item {
-        width: 30%;
+        width: 25%;
     }
 
     .read-more {
@@ -239,9 +240,7 @@ form input {
     }
 
     .read-more p {
-        width: 270px;
-        overflow-wrap: break-word;
-        font-size: 13px;
+        width: 500px;
         text-align: center;
     }
 
