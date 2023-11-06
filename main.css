@@ -258,11 +258,15 @@ form input {
         text-align: center;
     }
 
-    .card-img-container {
+    .card-img-container{
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: row;
         flex-wrap: nowrap;
         justify-content: center;
+    }
+
+    .card-img-container > span {
+        width: auto;
     }
 
     .mural-sub-item {
