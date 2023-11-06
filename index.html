@@ -17,7 +17,7 @@
                     <img class="logo" src="./img/logo/logo-white.png" alt="">
                 </a>
                 <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
-                    <span class="navbar-toggler-icon"></span>
+                    <img class="btn" src="./img/icons/toggler.png" alt="">
                 </button>
                 <nav class="collapse navbar-collapse justify-content-end">
                     <ul class="nav nav-pills navbar-nav" id="menu">
@@ -139,7 +139,7 @@
                                 <p class="card-text">
                                     When the heart tells you to go, say it back "go fuck yourself" and then make your decision.
                                 </p>
-                                <a href="#" class="btn btn-dark">read more</a>
+                                <a href="#" class="btn btn-light">read more</a>
                             </div>
                         </article>
                     </div>
@@ -156,7 +156,7 @@
                                 <p class="card-text">
                                     Do people tipically enjoy violence? We take a brief look back to try and better understand how gore made its way into modern elevated horror.
                                 </p>
-                                <a href="#" class="btn btn-dark">read more</a>
+                                <a href="#" class="btn btn-light">read more</a>
                             </div>
                         </article>
                     </div>
@@ -173,7 +173,7 @@
                                 <p class="card-text">
                                     Lucrecia Martel talks about her love life, broken things and the perils of <i>awarenessless</i>.
                                 </p>
-                                <a href="#" class="btn btn-dark">read more</a>
+                                <a href="#" class="btn btn-light">read more</a>
                             </div>
                         </article>
                     </div>
@@ -190,7 +190,7 @@
                                 <p class="card-text">
                                     What happens to the conscious part of your brain when you're not there to conduct. In our latest case study <i>Paris, Texas</i> is the subject.
                                 </p>
-                                <a href="#" class="btn btn-dark">read more</a>
+                                <a href="#" class="btn btn-light">read more</a>
                             </div>
                         </article>
                     </div>
@@ -207,7 +207,7 @@
                                 <p class="card-text">
                                     Why was Fellini's <i>La Dolce Vita</i> his greatest achievement and how it almost destroyed his career - we also highlight his strange and curious friendship with Mastroianni.
                                 </p>
-                                <a href="#" class="btn btn-dark">read more</a>
+                                <a href="#" class="btn btn-light">read more</a>
                             </div>
                         </article>
                     </div>
@@ -224,7 +224,7 @@
                                 <p class="card-text">
                                     Intervention of a <i>millenia</i>? Sydney Pollack would never write a letter to his younger self. "He doesn't deserve it."
                                 </p>
-                                <a href="#" class="btn btn-dark">read more</a>
+                                <a href="#" class="btn btn-light">read more</a>
                             </div>
                         </article>
                     </div>
@@ -526,6 +526,14 @@
             $('#modal').modal('show');
         });
 
+
+        $(document).ready(function () {
+            // When the navbar-toggler button is clicked
+            $(".navbar-toggler").click(function () {
+                // Toggle the visibility of the menu
+                $("#menu").toggle("slide");
+            });
+        });
 
     </script>
 </body>

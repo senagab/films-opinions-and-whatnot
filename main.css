@@ -251,8 +251,9 @@ form input {
 
 @media screen and (max-width: 767px) { /* conversão layout fixo para responsivo */
 
-    .navbar-toggler-icon {
-        background-color: white; /* Change the background color to white */
+    .navbar-toggler img {
+        height: 40px;
+        width: 100%;
     }
     
     #home {
@@ -302,7 +303,7 @@ form input {
     }
 
     .read-more p {
-        width: 500px;
+        width: 300px;
         text-align: center;
     }
 
