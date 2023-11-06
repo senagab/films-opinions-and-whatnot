@@ -240,6 +240,13 @@ form input {
     color: #fff !important;
 }
 
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 @media screen and (max-width: 767px) { /* conversão layout fixo para responsivo */
 
     .navbar-toggler-icon {
