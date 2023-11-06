@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
 
     // setup
-    const modal = document.getElementById('modal-review');
+    const modal = document.querySelector('#modal-review');
     const modalTitle = modal.querySelector('#titulo-review');
     const modalParagraph = modal.querySelector('#texto-review');
     const modalImage = modal.querySelector('#img-review');
@@ -69,6 +69,9 @@ document.addEventListener("DOMContentLoaded", function () {
         images.push(`./img/film-${i}.jpg`);
     }
 
+    // const images = Array.from({ length: 24 }, (_, i) => `./img/film-${i + 1}.jpg`);
+
+
     // array com nome de autores das reviews
     const authorNames = [
             "Gregory",
@@ -122,5 +125,16 @@ document.addEventListener("DOMContentLoaded", function () {
             modalInstance.show();
         });
     }
+
+    modal.addEventListener('hidden.bs.modal', function () {
+        const backdrops = document.querySelectorAll('.modal-backdrop');
+        backdrops.forEach((backdrop) => {
+            backdrop.parentNode.removeChild(backdrop);
+        });
+
+        
+    });
+    
+    
 
 });
