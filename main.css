@@ -283,6 +283,14 @@ form input {
         width: 25%;
     }
 
+    .modal {
+        position: fixed !important;
+        top: 50% !important;
+        left: 50% !important;
+        transform: translate(-50%, -50%) !important; 
+        width: 80% !important;
+    }
+
     .read-more {
         display: flex;
         flex-direction: column;
