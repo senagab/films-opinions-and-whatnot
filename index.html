@@ -19,8 +19,8 @@
                 <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
                     <img class="btn" src="./img/icons/toggler.png" alt="">
                 </button>
-                <nav class="collapse navbar-collapse justify-content-end">
-                    <ul class="nav nav-pills navbar-nav" id="menu">
+                <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="nav nav-pills navbar-nav">
                         <!-- <li class="nav-item">
                             <a class="nav-link" href="#sign-in">Sign in</a>
                         </li> -->
@@ -520,19 +520,11 @@
     <script src="./lib/bootstrap.bundle.min.js"></script>
     <script src="./js/main.js"></script>
     <script>
+
         document.getElementById('openModal').addEventListener('click', function (e) {
             e.preventDefault(); 
             
             $('#modal').modal('show');
-        });
-
-
-        $(document).ready(function () {
-            // When the navbar-toggler button is clicked
-            $(".navbar-toggler").click(function () {
-                // Toggle the visibility of the menu
-                $("#menu").toggle("slide");
-            });
         });
 
     </script>
