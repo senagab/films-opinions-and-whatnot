@@ -23,6 +23,10 @@ header {
     z-index: 999; /* Set a higher value here */
 }
 
+/* .logo {
+    cursor: pointer;
+} */
+
 .navbar a {
     color: #fff;
 }
@@ -92,6 +96,10 @@ section {
     font-size: 22px;
 }
 
+.card-text {
+    margin-bottom: 10px;
+}
+
 .card-img-container {
     display: flex;
     align-items: center;
@@ -113,16 +121,8 @@ section {
     font-size: 14px;
 }
 
-.btn-card-read {
-    font-weight: 500;
-    text-decoration: none;
-    /* text-transform: uppercase; */
-    color: rgb(154, 154, 154);
-}
-
-.btn-card-read:hover {
-    /* color: white; */
-    color: rgb(208, 208, 208);
+.btn-light {
+    /* height: 40px; */
 }
 
 /* mural */
@@ -208,6 +208,15 @@ section {
 .auteur-photos img {
     height: 22em;
 }
+
+/* sign-up */
+
+.sign-up {
+    /* background-color: white; */
+    padding: 20px;
+}
+
+/* modal sign-up */
 
 .captcha {
     display: flex;
@@ -313,14 +322,10 @@ form input {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-    
-
 
 }
 
 @media screen and (min-width: 1024px) {
-
-    
 
 }
 

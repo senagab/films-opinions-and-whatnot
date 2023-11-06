@@ -13,10 +13,9 @@
     <header id="cabecalho">
         <div class="navbar navbar-expand-lg bg-dark">
             <div class="container">
-                <h1 style="color: #fff; display: flex; align-items: baseline;">
-                    logo
-                    <img style="width: 25px; margin-left: 7px;" src="./img/icons/light-icon.png" alt="">
-                </h1>
+                <a href="#">
+                    <img class="logo" src="./img/logo/logo-white.png" alt="">
+                </a>
                 <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -140,7 +139,7 @@
                                 <p class="card-text">
                                     When the heart tells you to go, say it back "go fuck yourself" and then make your decision.
                                 </p>
-                                <a href="#" class="btn-card-read">read more</a>
+                                <a href="#" class="btn btn-dark">read more</a>
                             </div>
                         </article>
                     </div>
@@ -157,7 +156,7 @@
                                 <p class="card-text">
                                     Do people tipically enjoy violence? We take a brief look back to try and better understand how gore made its way into modern elevated horror.
                                 </p>
-                                <a href="#" class="btn-card-read">read more</a>
+                                <a href="#" class="btn btn-dark">read more</a>
                             </div>
                         </article>
                     </div>
@@ -174,7 +173,7 @@
                                 <p class="card-text">
                                     Lucrecia Martel talks about her love life, broken things and the perils of <i>awarenessless</i>.
                                 </p>
-                                <a href="#" class="btn-card-read">read more</a>
+                                <a href="#" class="btn btn-dark">read more</a>
                             </div>
                         </article>
                     </div>
@@ -191,7 +190,7 @@
                                 <p class="card-text">
                                     What happens to the conscious part of your brain when you're not there to conduct. In our latest case study <i>Paris, Texas</i> is the subject.
                                 </p>
-                                <a href="#" class="btn-card-read">read more</a>
+                                <a href="#" class="btn btn-dark">read more</a>
                             </div>
                         </article>
                     </div>
@@ -208,7 +207,7 @@
                                 <p class="card-text">
                                     Why was Fellini's <i>La Dolce Vita</i> his greatest achievement and how it almost destroyed his career - we also highlight his strange and curious friendship with Mastroianni.
                                 </p>
-                                <a href="#" class="btn-card-read">read more</a>
+                                <a href="#" class="btn btn-dark">read more</a>
                             </div>
                         </article>
                     </div>
@@ -225,77 +224,13 @@
                                 <p class="card-text">
                                     Intervention of a <i>millenia</i>? Sydney Pollack would never write a letter to his younger self. "He doesn't deserve it."
                                 </p>
-                                <a href="#" class="btn-card-read">read more</a>
+                                <a href="#" class="btn btn-dark">read more</a>
                             </div>
                         </article>
                     </div>
                 </div>
             </div>
         </section>
-
-        <!-- mural mubi -->
-        <style>
-            .modal {
-                color: white;
-            }
-
-            .review-container p {
-                font-weight: 300;
-                font-size: 12px;
-            }
-
-            .film-container img {
-                height: 150px;
-                margin-right: 20px;
-            }
-
-            .main-container {
-                background-color: #1a1d20;
-                padding: 15px;
-                border-radius: 0.5rem;
-            }
-
-            .main-container h3 {
-                font-size: 20px;
-            }
-
-            .icons-container {
-                margin-right: 5px;
-                cursor: pointer;
-            }
-
-            .icons-container img {
-                height: 12px;
-                margin-right: 8px;
-                opacity: 0.6;
-            }
-
-            .icons-container span {
-                font-size: 14px;
-                font-weight: 400;
-                opacity: 0.6;
-            }
-
-            .icons-container:hover img, .icons-container:hover span {
-                opacity: 1;
-            }
-
-            .author {
-                font-size: 12px;
-                color: white;
-                font-weight: 300;
-            }
-
-            span #author {
-                text-decoration: underline;
-                cursor: pointer;
-            }
-
-            .footer-container {
-                padding: 5px;
-            }
-
-        </style>
 
         <section id="mural" class="mural">
             <div class="container">
@@ -395,6 +330,69 @@
 
         <!-- modal mural -->
         
+        <style>
+            .modal {
+                color: white;
+            }
+
+            .review-container p {
+                font-weight: 300;
+                font-size: 12px;
+            }
+
+            .film-container img {
+                height: 150px;
+                margin-right: 20px;
+            }
+
+            .main-container {
+                background-color: #1a1d20;
+                padding: 15px;
+                border-radius: 0.5rem;
+            }
+
+            .main-container h3 {
+                font-size: 20px;
+            }
+
+            .icons-container {
+                margin-right: 5px;
+                cursor: pointer;
+            }
+
+            .icons-container img {
+                height: 12px;
+                margin-right: 8px;
+                opacity: 0.6;
+            }
+
+            .icons-container span {
+                font-size: 14px;
+                font-weight: 400;
+                opacity: 0.6;
+            }
+
+            .icons-container:hover img, .icons-container:hover span {
+                opacity: 1;
+            }
+
+            .author {
+                font-size: 12px;
+                color: white;
+                font-weight: 300;
+            }
+
+            span #author {
+                text-decoration: underline;
+                cursor: pointer;
+            }
+
+            .footer-container {
+                padding: 5px;
+            }
+
+        </style>
+        
         <div id="modal-review" class="modal fade" role="dialog">
             <div class="modal-dialog">
                 <div class="modal-content bg-dark">
@@ -402,6 +400,10 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                     </div> -->
                     <div class="modal-body">
+                        <div class="modal-header" style="border: none ;">
+                            <!-- <h5 class="display-5" style="font-size: 20px;">JOIN LOGOS</h5> -->
+                            <!-- <button type="button" class="btn-close" data-bs-dismiss="modal"></button> -->
+                        </div>
                                             
                         <div class="review-container d-flex">
                             <div class="film-container">
@@ -441,7 +443,7 @@
         </div>
 
         <!-- section sign up -->
-        <section id="sign-up">
+        <section id="sign-up" class="bg-signup">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 sign-up" style="text-align: center;">
@@ -472,7 +474,7 @@
             <div class="modal-content bg-dark">
                 <div class="modal-header" style="border-bottom: 1px solid #444 !important;">
                     <h5 class="display-5" style="font-size: 20px;">JOIN LOGOS</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    <!-- <button type="button" class="btn-close" data-bs-dismiss="modal"></button> -->
                 </div>
                 <style>
                     input .form-control {
