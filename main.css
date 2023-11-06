@@ -319,6 +319,8 @@ form input {
         width: 400px;
         object-fit: cover;
         /* margin: auto; */
+        display: flex;
+        justify-content: center;
     }
 
     .auteur-photos img {
