@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-    // setup
+    // setup: loadup de conteúdo das reviews em mural
     const modal = document.querySelector('#modal-review');
     const modalTitle = modal.querySelector('#titulo-review');
     const modalParagraph = modal.querySelector('#texto-review');
