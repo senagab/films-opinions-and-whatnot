@@ -23,9 +23,9 @@ header {
     z-index: 999; /* Set a higher value here */
 }
 
-/* .logo {
-    cursor: pointer;
-} */
+.logo {
+    padding: 12px;
+}
 
 .navbar a {
     color: #fff;
@@ -284,6 +284,10 @@ form input {
         width: 25%;
     }
 
+    .mural p {
+        text-align: right;
+    }
+
     .modal {
         position: fixed !important;
         top: 50% !important;
@@ -309,6 +313,12 @@ form input {
 
     .auteur-quote img {
         display: none;
+    }
+
+    .auteur-quote-sm img {
+        width: 330px;
+        object-fit: cover;
+        /* margin: auto; */
     }
 
     .auteur-photos img {
