@@ -260,8 +260,8 @@ form input {
 
     .card-img-container {
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        flex-wrap: nowrap;
         justify-content: center;
     }
 
