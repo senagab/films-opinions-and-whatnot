@@ -6,7 +6,7 @@
 }
 
 body {
-    color: #908f8d;
+    color: #fff;
 }
 
 h2 {
@@ -125,6 +125,14 @@ section {
     /* height: 40px; */
 }
 
+.toast-container {
+    border-radius: 0.375rem;
+}
+
+.toast-body {
+    background-color: #222;
+}
+
 /* mural */
 
 .mural h2 {
@@ -159,6 +167,10 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.read-more-sm {
+    display: none;
 }
 
 .read-more h2 {
@@ -207,6 +219,18 @@ section {
 
 .auteur-photos img {
     height: 22em;
+}
+
+.auteur-quote-sm img {
+    display: none;
+}
+
+.auteur-photos-sm img {
+    display: none;
+}
+
+.guest-quote {
+    font-size: 15px !important;
 }
 
 /* sign-up */
