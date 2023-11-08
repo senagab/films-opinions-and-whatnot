@@ -279,10 +279,6 @@ form input {
         height: 40px;
         width: 100%;
     }
-    
-    #home {
-        /* height: 100vh; */
-    }
 
     .main-panel h2,
     .main-panel span {
@@ -302,22 +298,6 @@ form input {
 
     .card-img-container > span {
         width: auto;
-    }
-
-    .mural-sub-item {
-        width: 25%;
-    }
-
-    .mural p {
-        text-align: right;
-    }
-
-    .modal {
-        position: fixed !important;
-        top: 50% !important;
-        left: 50% !important;
-        transform: translate(-50%, -50%) !important; 
-        width: 90% !important;
     }
 
     .read-more {
@@ -362,6 +342,27 @@ form input {
         object-fit: cover;
         max-width: 100%; /* Garante que as imagens não ultrapassem o carrossel */
         display: inline-block;
+    }
+
+    .mural-sub-item {
+        width: 25%;
+        padding: 1em;
+    }
+
+    .mural-sub-item img {
+        height: 5em;
+    }
+
+    .mural p {
+        text-align: right;
+    }
+
+    .modal {
+        position: fixed !important;
+        top: 50% !important;
+        left: 50% !important;
+        transform: translate(-50%, -50%) !important; 
+        width: 90% !important;
     }
     
 }
