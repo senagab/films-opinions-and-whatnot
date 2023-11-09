@@ -1,0 +1,383 @@
+@font-face {
+    font-family: 'Tiempos';
+    src: url('./fonts/TestTiemposHeadline-Semibold.otf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+body {
+    color: #fff;
+}
+
+h2 {
+    text-transform: uppercase;
+    color: #fff !important;
+    font-family: 'Tiempos', serif;
+}
+
+header {
+    position: sticky !important;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: 999; /* Set a higher value here */
+}
+
+.logo {
+    padding: 12px;
+}
+
+.navbar a {
+    color: #fff;
+}
+
+.navbar a:hover {
+    color: #ddd;
+}
+
+.active {
+    background-color: #fff !important;
+    color: #222 !important;
+}
+
+.nav-link {
+    text-align: center;
+}
+
+/* home page */
+
+.background-home {
+    background-image: url("img/wallp-1.png");
+    height: 900px;
+    width:100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-panel {
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.main-panel h2, span {
+    overflow-wrap: break-word;
+    width: 800px;
+}
+
+/* sections */
+
+section {
+    padding-top: 20vh;
+    background-color: #171818;
+}
+
+.home {
+    padding-top: 0 !important;
+}
+
+/* articles */
+
+.card {
+    /* background-color: #eee; */
+    /* padding: 10px; */
+    border-radius: 0.375rem;
+    border: none;
+    color: #fff !important;
+    height: auto !important;
+}
+
+.card h4 {
+    margin-top: 10px;
+    color: #ddd !important;
+    font-family: 'Tiempos', serif;
+    font-size: 22px;
+}
+
+.card-text {
+    margin-bottom: 10px;
+}
+
+.card-img-container {
+    display: flex;
+    align-items: center;
+}
+
+.card-img {
+    /* height: 15em !important; */
+    object-fit: cover;
+    border-radius: 0.375rem 0.375rem 0 0;
+}
+
+.card-icon {
+    height: 20px;
+    border-radius: 12px;
+    margin-right: 5px;
+}
+
+.card-img-container > span {
+    font-size: 14px;
+}
+
+.btn-light {
+    /* height: 40px; */
+}
+
+.toast-container {
+    border-radius: 0.375rem;
+}
+
+.toast-body {
+    background-color: #222;
+}
+
+/* mural */
+
+.container-mural {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.mural h2 {
+    margin-right: .5em;
+}
+
+.mural-sub-item img {
+    cursor: pointer;
+    padding: 2px;
+    border: 2px solid #171818; /* Initial border */
+    transition: border-color 0.3s;
+    height: 130px;
+    /* width: 90px !important; */
+    object-fit: cover;
+}
+
+/* .row > .mural-sub-item {
+    width: auto;
+} */
+
+.mural-sub-item img:hover {
+    border: 2px solid #fff;
+}
+
+/* showcase */
+
+.read-more {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.read-more-sm {
+    display: none;
+}
+
+.read-more h2 {
+    font-size: 35px;
+}
+
+.read-more p {
+    width: 700px;
+    overflow-wrap: break-word;
+    font-size: 13px;
+    text-align: right;
+}
+
+.carousel-inner {
+    object-fit: cover;
+    height: 300px;
+}
+
+.container-circle {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: 2px solid #bbb;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+    /* margin: 10px 10px 0 auto ; */
+}
+
+.circle a {
+    text-decoration: none;
+    color: #bbb;
+    font-size: 12px;
+}
+
+.auteur-quote img {
+    height: 20em;
+}
+
+.auteur-photos img {
+    height: 22em;
+}
+
+.auteur-quote-sm img {
+    display: none;
+}
+
+.auteur-photos-sm img {
+    display: none;
+}
+
+.guest-quote {
+    font-size: 15px !important;
+}
+
+/* sign-up */
+
+.sign-up {
+    /* background-color: white; */
+    padding: 20px;
+}
+
+/* modal sign-up */
+
+.captcha {
+    display: flex;
+    background-color: #111;
+    border-radius: 5px;
+    height: 60px;
+    width: 60%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+}
+
+.captcha img {
+    height: 30px;
+}
+
+.captcha p {
+    color: #fff;
+    align-items: center;
+}
+
+.terms a {
+    color: white;
+    text-decoration: none;
+}
+
+form input {
+    background-color: #171818 !important;
+    border: 1px solid #111 !important;
+    color: #fff !important;
+}
+
+@media screen and (max-width: 767px) { /* conversão layout fixo para responsivo */
+
+    .navbar-toggler img {
+        height: 40px;
+        width: 100%;
+    }
+
+    .main-panel h2,
+    .main-panel span {
+        max-width: 300px;
+    }
+
+    .card {
+        text-align: center;
+    }
+
+    .card-img-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+
+    .card-img-container > span {
+        width: auto;
+    }
+
+    .read-more {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        text-align: center;
+        width: 100%;
+        /* overflow: scroll; */
+    }
+
+    .read-more p {
+        width: 300px;
+        text-align: center;
+    }
+
+    .auteur-quote img {
+        display: none;
+    }
+
+    .auteur-quote-sm img {
+        width: 400px;
+        object-fit: cover;
+        /* margin: auto; */
+        display: flex;
+        justify-content: center;
+    }
+
+    .auteur-photos img {
+        display: none;
+    }
+
+    .carousel-inner {    
+        max-width: 100%;
+        height: auto;
+    }
+
+    .carousel-inner img {
+        /* height: 500px; */
+        width: 100%;
+        object-fit: cover;
+        max-width: 100%; /* Garante que as imagens não ultrapassem o carrossel */
+        display: inline-block;
+    }
+
+    .container-mural {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .mural-sub-item {
+        width: 25%;
+        padding: 1em;
+    }
+
+    .mural-sub-item img {
+        height: 5em;
+    }
+
+    .mural p {
+        text-align: right;
+    }
+
+    .modal {
+        position: fixed !important;
+        top: 50% !important;
+        left: 50% !important;
+        transform: translate(-50%, -50%) !important; 
+        width: 90% !important;
+    }
+    
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+}
+
+@media screen and (min-width: 1024px) {
+
+}
+
