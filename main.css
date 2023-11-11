@@ -436,7 +436,15 @@ form input {
         height: 40px;
     }
 
+    .main-panel h2,
+    .main-panel span {
+        width: 80%;
+        text-align: center;
+    }
+
     .sign-up {
+        display: flex;
+        align-items: center;
         text-align: center;
     }
 
