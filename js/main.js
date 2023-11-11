@@ -126,6 +126,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
+    // prevent backdrops duplication
     modal.addEventListener('hidden.bs.modal', function () {
         const backdrops = document.querySelectorAll('.modal-backdrop');
         backdrops.forEach((backdrop) => {

@@ -81,8 +81,6 @@ section {
 /* articles */
 
 .card {
-    /* background-color: #eee; */
-    /* padding: 10px; */
     border-radius: 0.375rem;
     border: none;
     color: #fff !important;
@@ -106,7 +104,6 @@ section {
 }
 
 .card-img {
-    /* height: 15em !important; */
     object-fit: cover;
     border-radius: 0.375rem 0.375rem 0 0;
 }
@@ -119,10 +116,6 @@ section {
 
 .card-img-container > span {
     font-size: 14px;
-}
-
-.btn-light {
-    /* height: 40px; */
 }
 
 .toast-container {
@@ -149,19 +142,11 @@ section {
     object-fit: cover;
 }
 
-/* .row > .mural-sub-item {
-    width: auto;
-} */
-
 .mural-sub-item img:hover {
     border: 2px solid #fff;
 }
 
 /* showcase */
-
-/* .sign-up p {
-    font-size: 20px;
-} */
 
 .read-more {
     display: flex;
